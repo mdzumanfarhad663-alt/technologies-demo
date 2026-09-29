@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZPTech Hero Video Preview</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0e0d0b;font-family:Georgia,'Times New Roman',serif;color:#fff}
+  .hero{position:relative;height:100vh;min-height:520px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+  .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.45))}
+  .copy{position:relative;z-index:1;max-width:760px;padding:0 24px}
+  .eyebrow{font-family:Arial,sans-serif;font-size:13px;letter-spacing:.28em;text-transform:uppercase;opacity:.85;margin-bottom:18px}
+  h1{font-size:clamp(34px,6vw,64px);font-weight:400;line-height:1.1;margin-bottom:18px}
+  p{font-family:Arial,sans-serif;font-size:clamp(15px,2vw,18px);opacity:.9;line-height:1.6;margin-bottom:30px}
+  a.btn{font-family:Arial,sans-serif;display:inline-block;padding:14px 30px;border:1px solid rgba(255,255,255,.8);color:#fff;text-decoration:none;letter-spacing:.12em;font-size:13px;text-transform:uppercase}
+  .note{font-family:Arial,sans-serif;text-align:center;font-size:13px;opacity:.6;padding:18px}
+</style>
+</head>
+<body>
+<section class="hero">
+  <video autoplay muted loop playsinline preload="auto" poster="zptech-hero-poster.jpg">
+    <source src="zptech-hero-720.mp4" type="video/mp4" media="(max-width: 767px)">
+    <source src="zptech-hero-1080.webm" type="video/webm">
+    <source src="zptech-hero-1080.mp4" type="video/mp4">
+  </video>
+  <div class="copy">
+    <div class="eyebrow">Where science meets stillness</div>
+    <h1>Elite minerals for body, mind and ascension</h1>
+    <p>Placeholder headline to show how your text sits over the video.</p>
+    <a class="btn" href="#">Explore the collection</a>
+  </div>
+</section>
+<div class="note">Hero video preview for ZPTech &middot; real footage, 17-second seamless loop, 1&ndash;2 MB</div>
+</body>
+</html>
